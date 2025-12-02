@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c343.store | 7³×7 Books & Resources | Consciousness Library</title>
+    <meta name="description" content="The complete library of 7³×7 consciousness transformation books. 33+ titles covering life, family, marriage, health, wealth, leadership, prayer, and more.">
+    <meta name="keywords" content="consciousness books, spiritual books, 7 cubed 7 books, 144000 books, christian books, transformation, personal growth, Julio Medina author">
+    <meta name="author" content="Seven Cubed Seven Labs LLC">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://c343.store/">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://c343.store/">
+    <meta property="og:title" content="c343.store | 7³×7 Books & Resources">
+    <meta property="og:description" content="The complete library of consciousness transformation books.">
+    <meta property="og:image" content="https://c343.store/images/og-store.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --gold: #d4af37;
+            --gold-dark: #b8960c;
+            --cream: #faf8f3;
+            --dark-text: #2c2c2c;
+            --light-text: #666;
+            --white: #ffffff;
+            --accent-red: #c44536;
+            --accent-blue: #1a3a6e;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: var(--cream);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        header {
+            background: var(--white);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            text-decoration: none;
+        }
+        
+        .logo span { color: var(--dark-text); font-weight: 400; }
+        
+        nav a {
+            color: var(--dark-text);
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover { color: var(--gold); }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--white);
+            padding: 80px 40px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Stats */
+        .stats-bar {
+            background: var(--white);
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            flex-wrap: wrap;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--gold);
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--light-text);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Book Categories */
+        .categories {
+            padding: 80px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 15px;
+            color: var(--dark-text);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--light-text);
+            margin-bottom: 50px;
+        }
+        
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .category-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .category-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--dark-text);
+        }
+        
+        .category-card p {
+            color: var(--light-text);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        
+        .category-count {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--white);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        /* Featured Section */
+        .featured {
+            background: var(--accent-blue);
+            color: var(--white);
+            padding: 80px 40px;
+            text-align: center;
+        }
+        
+        .featured .section-title {
+            color: var(--gold);
+        }
+        
+        .featured .section-subtitle {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .featured-books {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .featured-book {
+            width: 150px;
+        }
+        
+        .book-cover {
+            width: 150px;
+            height: 220px;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            border-radius: 4px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        
+        .book-cover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 10px;
+            background: linear-gradient(90deg, rgba(0,0,0,0.2), transparent);
+            border-radius: 4px 0 0 4px;
+        }
+        
+        .book-cover-text {
+            color: var(--white);
+            font-family: 'Playfair Display', serif;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 15px;
+            font-weight: 500;
+        }
+        
+        .featured-book-title {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        /* CTA */
+        .cta-section {
+            padding: 80px 40px;
+            text-align: center;
+            background: var(--white);
+        }
+        
+        .cta-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .cta-section p {
+            color: var(--light-text);
+            margin-bottom: 30px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 50px;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .btn-gold {
+            background: var(--gold);
+            color: var(--white);
+        }
+        
+        .btn-gold:hover {
+            background: var(--gold-dark);
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            margin-left: 15px;
+        }
+        
+        .btn-outline:hover {
+            background: var(--gold);
+            color: var(--white);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark-text);
+            color: var(--white);
+            padding: 50px 40px;
+            text-align: center;
+        }
+        
+        .footer-formula {
+            font-family: 'Playfair Display', serif;
+            color: var(--gold);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9rem;
+        }
+        
+        .footer-links a:hover { color: var(--gold); }
+        
+        .copyright {
+            margin-top: 25px;
+            font-size: 0.85rem;
+            opacity: 0.6;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .stats-bar { gap: 40px; }
+            header { flex-direction: column; gap: 15px; }
+            nav a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">c343<span>.store</span></a>
+        <nav>
+            <a href="https://sevencubedseven.com">Main Hub</a>
+            <a href="https://www.amazon.com/s?k=julio+c.+medina&i=digital-text&crid=NJR2J0LXSVJV&sprefix=%2Cdigital-text%2C102&ref=nb_sb_ss_recent_1_0_recent">Amazon</a>
+            <a href="https://144000.ai">144,000</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>📚 The Consciousness Library</h1>
+        <p>33+ books covering every dimension of life through the 7³×7 = 2,401 consciousness framework</p>
+    </section>
+    
+    <div class="stats-bar">
+        <div class="stat">
+            <div class="stat-number">33+</div>
+            <div class="stat-label">Books</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">7</div>
+            <div class="stat-label">Life Dimensions</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">2,401</div>
+            <div class="stat-label">Aspects Covered</div>
+        </div>
+    </div>
+    
+    <section class="categories">
+        <h2 class="section-title">Browse by Category</h2>
+        <p class="section-subtitle">Find the perfect book for your transformation journey</p>
+        
+        <div class="category-grid">
+            <a href="https://www.amazon.com/s?k=julio+c.+medina&i=digital-text&crid=NJR2J0LXSVJV&sprefix=%2Cdigital-text%2C102&ref=nb_sb_ss_recent_1_0_recent" class="category-card">
+                <div class="category-icon">👨‍👩‍👧‍👦</div>
+                <h3>Family & Relationships</h3>
+                <p>Transform your family dynamics with the 7³×7 framework</p>
+                <span class="category-count">5 Books</span>
+            </a>
+            
+            <a href="https://www.amazon.com/s?k=julio+c.+medina&i=digital-text&crid=NJR2J0LXSVJV&sprefix=%2Cdigital-text%2C102&ref=nb_sb_ss_recent_1_0_recent" class="category-card">
+                <div class="category-icon">💰</div>
+                <h3>Wealth & Business</h3>
+                <p>Consciousness-based prosperity and leadership</p>
+                <span class="category-count">4 Books</span>
+            </a>
+            
+            <a href="https://www.amazon.com/s?k=julio+c.+medina&i=digital-text&crid=NJR2J0LXSVJV&sprefix=%2Cdigital-text%2C102&ref=nb_sb_ss_recent_1_0_recent" class="category-card">
+                <div class="category-icon">🏥</div>
+                <h3>Health & Wellness</h3>
+                <p>Physical, mental, and spiritual wholeness</p>
+                <span class="category-count">3 Books</span>
+            </a>
+            
+            <a href="https://www.amazon.com/s?k=julio+c.+medina&i=digital-text&crid=NJR2J0LXSVJV&sprefix=%2Cdigital-text%2C102&ref=nb_sb_ss_recent_1_0_recent" class="category-card">
+                <div class="category-icon">⛪</div>
+                <h3>Church & Ministry</h3>
+                <p>Organizational transformation for communities</p>
+                <span class="category-count">4 Books</span>
+            </a>
+            
+            <a href="https://www.amazon.com/s?k=julio+c.+medina&i=digital-text&crid=NJR2J0LXSVJV&sprefix=%2Cdigital-text%2C102&ref=nb_sb_ss_recent_1_0_recent" class="category-card">
+                <div class="category-icon">🙏</div>
+                <h3>Prayer & Devotion</h3>
+                <p>Deep spiritual practices and connection</p>
+                <span class="category-count">3 Books</span>
+            </a>
+            
+            <a href="https://www.amazon.com/s?k=julio+c.+medina&i=digital-text&crid=NJR2J0LXSVJV&sprefix=%2Cdigital-text%2C102&ref=nb_sb_ss_recent_1_0_recent" class="category-card">
+                <div class="category-icon">🤖</div>
+                <h3>AI & Consciousness</h3>
+                <p>The intersection of technology and awareness</p>
+                <span class="category-count">4 Books</span>
+            </a>
+            
+            <a href="https://www.amazon.com/s?k=julio+c.+medina&i=digital-text&crid=NJR2J0LXSVJV&sprefix=%2Cdigital-text%2C102&ref=nb_sb_ss_recent_1_0_recent" class="category-card">
+                <div class="category-icon">⚔️</div>
+                <h3>Spiritual Warfare</h3>
+                <p>Tactical manuals for the 144,000</p>
+                <span class="category-count">5 Books</span>
+            </a>
+            
+            <a href="https://www.amazon.com/s?k=julio+c.+medina&i=digital-text&crid=NJR2J0LXSVJV&sprefix=%2Cdigital-text%2C102&ref=nb_sb_ss_recent_1_0_recent" class="category-card">
+                <div class="category-icon">📐</div>
+                <h3>Mathematics & Physics</h3>
+                <p>The science behind consciousness architecture</p>
+                <span class="category-count">5 Books</span>
+            </a>
+        </div>
+    </section>
+    
+    <section class="featured">
+        <h2 class="section-title">Bestsellers</h2>
+        <p class="section-subtitle">Start your consciousness journey with these foundational works</p>
+        
+        <div class="featured-books">
+            <div class="featured-book">
+                <div class="book-cover">
+                    <span class="book-cover-text">The 7³<br>Life</span>
+                </div>
+                <p class="featured-book-title">The 7³ Life</p>
+            </div>
+            <div class="featured-book">
+                <div class="book-cover">
+                    <span class="book-cover-text">Seven<br>Thunders<br>Manual</span>
+                </div>
+                <p class="featured-book-title">Seven Thunders</p>
+            </div>
+            <div class="featured-book">
+                <div class="book-cover">
+                    <span class="book-cover-text">Divine<br>Insurgent</span>
+                </div>
+                <p class="featured-book-title">Divine Insurgent</p>
+            </div>
+            <div class="featured-book">
+                <div class="book-cover">
+                    <span class="book-cover-text">Conscious<br>Code</span>
+                </div>
+                <p class="featured-book-title">Conscious Code</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta-section">
+        <h2>Not Sure Where to Start?</h2>
+        <p>Take our personalized Book Finder quiz to discover the perfect book for your current season</p>
+        <a href="https://sevencubedseven.com/books" class="btn btn-gold">Find My Book</a>
+        <a href="https://www.amazon.com/s?k=julio+c.+medina&i=digital-text&crid=NJR2J0LXSVJV&sprefix=%2Cdigital-text%2C102&ref=nb_sb_ss_recent_1_0_recent" class="btn btn-outline">Browse All</a>
+    </section>
+    
+    <footer>
+        <div class="footer-formula">7³ × 7 = 2,401</div>
+        <div class="footer-links">
+            <a href="https://sevencubedseven.com">Main Hub</a>
+            <a href="https://144000.ai">144,000</a>
+            <a href="https://2401.is">Mathematics</a>
+            <a href="https://c343.io">Enterprise</a>
+        </div>
+        <p class="copyright">© 2025 Seven Cubed Seven Labs LLC. Transform Your Consciousness.</p>
+    </footer>
+</body>
+</html>
